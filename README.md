@@ -23,6 +23,9 @@ The models are trained and evaluated on the widely recognized **MIT-BIH Arrhythm
 * Data from identical patients (e.g., records 201 and 202) are merged into single test subjects during LOSO folds to guarantee zero patient overlap between training and testing sets.
 
 ## 🧠 Methodology & Architecture
+![Research Pipeline Diagram](research-pipeline.jpg)
+
+*Want to see the original diagram file? [Click here to view it on Google Drive](https://drive.google.com/file/d/1h_NHaM8Y9AQ7MdeYidIVZ_OTkILvJ2DI/view?usp=sharing)*
 * **Intra-Beat Scale:** A dual-branch 1D CNN encoder extracting morphological features from 2-lead, 300-sample single heartbeats.
 * **Inter-Beat Scale:** A sequential 1D CNN encoder processing a 9-beat sequence (the focal beat + 8 surrounding context beats) to capture temporal rhythm patterns.
 * **Optimization:** Trained using **Focal Loss** ($\gamma = 2.0$) with inverse-frequency class weighting to address the severe class imbalance inherent in clinical ECG data, optimized via AdamW and OneCycleLR scheduling.
