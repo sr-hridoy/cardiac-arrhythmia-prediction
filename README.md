@@ -45,7 +45,7 @@ The Dual-Scale 1D CNN achieved the following aggregate performance under the LOS
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/sr-hridoy/cardiac-arrhythmia-prediction.git](https://github.com/sr-hridoy/cardiac-arrhythmia-prediction.git)
+   git clone https://github.com/sr-hridoy/cardiac-arrhythmia-prediction.git
    cd cardiac-arrhythmia-prediction
    ```
 
